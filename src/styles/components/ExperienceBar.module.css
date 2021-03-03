@@ -1,0 +1,31 @@
+/* Servirá para ultilizar o CSS modules */
+
+.experienceBar {
+  display: flex;
+  align-items: center;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+}
+
+.experienceBar > div {
+  flex: 1; /* largura maxima do container */
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-line);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBar > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
+}
+
+span.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translate(-50%); /* Desloca -50% para a esquerda */
+}
